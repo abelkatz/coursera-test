@@ -1,11 +1,20 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="MyFirstApp">
+<head>
+  <meta charset="utf-8">
+  <script src="angular.min.js"></script>
+  <script src="app.js"></script>
+  <title>My first angularJs App</title>
+</head>
 <body>
 
-<h1>My First Heading</h1>
+<h1>My first angularJs App</h1>
 
 <p>My first paragraph.</p>
-<p>My second paragraph.</p>
+<div ng-controller="MyFirstController">
+  <input type="text" ng-model="name" >
+<br/>  My second paragraph {{name}}.
+</div>
 
 </body>
 </html>
