@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en"  ng-app='SearchMenuApp'>
+  <head>
+    <title>Narrow Down Your Menu Choice</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+      <script src="angular.min.js"></script>
+      <script src="app.js"></script>
+  </head>
+<body>
+<div  ng-app='SearchMenuApp'>
+    <div ng-controller="MyCtrl">
+        <input type="text" ng-model="search">
+        <table>
+            <tbody>
+
+            <tr ng-repeat="item in items">
+                <td>{{item.short_name}}</td>
+                <td>{{item.name}}</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+</body>
+</html>
